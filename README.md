@@ -1,3 +1,6 @@
+Musicapp react has a different entity relationship diagram, which was made more clear as I tried to do the frontend and saw a better way to present the information, the backend could be fixed with many to one relationships starting with tracks to album and then albums to artist.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
