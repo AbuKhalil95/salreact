@@ -1,10 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MusicList from './musicList';
 
+
 class App extends React.Component{
-  render(){
+
+
+  render() {
+
     return (
       <div className="App">
         <header>
@@ -12,11 +15,23 @@ class App extends React.Component{
         </header>
         <main></main>
         <nav></nav>
-				<MusicList></MusicList>
+				<MusicList />
         <footer>© 2020 MusicApp</footer>
       </div>
     )
   }
 }
-
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
