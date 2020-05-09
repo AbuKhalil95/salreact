@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+
+
+
+// fetch(url, opts)
+//   .then(res => res.json())
+//   .then(console.log)
+//   .catch(console.error);
+
 // import data from "./data"; 
-var url = 'http://127.0.0.1:8000/music/?format=json';
+var url = 'http://127.0.0.1:8000/graphql/';
 
 class MusicList extends Component {
 
@@ -12,100 +20,53 @@ class MusicList extends Component {
 		  
 		};
 		
-	  }
+	}
 	  
 	  componentDidMount() {
-		fetch(url)
+
+		const query = 
+			`query {
+				artists(first:6){
+				  artist
+				  album
+				  trackName
+				  logoUrl
+				}
+			}`;	
+
+		const opts = {
+		method: "POST",
+		headers: { 
+			"Content-Type": "application/json",
+			"Accept": 'application/json' },
+		body: JSON.stringify({ query })
+		};
+		fetch(url, opts)
 		  .then(response => response.json())
-		  .then(data => this.setState({ hits: data }, console.log(data)));
+		  .then(json => this.setState({ hits: json.data.artists }, console.log(json)));
 	  }
 	render() {
 		const { hits } = this.state;
-	 
+		console.log(hits)
 	    return (
-	      <ul>
-			{hits.map((hit,i) =>
-				<div key={i} className="musiclist">
-					<span className="dot">{i+1}</span>
-					<li>
-					<p>Artist Name: {hit.artist}</p>
-					<p>Album: {hit.album}</p>
-					<p>Track: {hit.track_name}</p>
-					</li>
-				</div>
-	        )}
-	      </ul>
+		<div className="grid">
+				{hits.map((hit,i) =>
+					<div key={i} className="module">
+						<div className="song" style={{backgroundImage: `url(${hit.logoUrl})`}}>
+							{/* <span className="url">{i+1}</span> */}
+							<div className="glassPane"></div>
+							<div className="dropdown-content">
+								<div className="desc">
+									<p id="artist">{hit.artist}</p>
+									<p id="album">Album: {hit.album}</p>
+									<p id="track">Track: {hit.trackName}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
+		</div>
 	    );
 	  }
-
-	// render() {
-	// 	return (
-	// 		<div className="musiclist">
-	// 			{
-	// 				artists.map((artist, i) => {
-	// 					return (
-	// 						<div key={i} className="artists">
-	// 							<div>
-	// 								<a href={artist.url}>
-	// 									<img src={artist	.logo} alt={artist.name} />
-	// 								</a>
-	// 								<div className="detailedList">
-	// 									<div>
-	// 										<a href={artist.url}>{artist.name}</a>
-	// 									</div>
-	// 										{artist.albums.map(function (albums, i) { 
-	// 											return <div key={i} >
-	// 												<h5>{albums.title}</h5>
-	// 												{albums.tracks.map((tracks, i) => { 
-	// 													return <div key={i} >
-	// 														<p>{tracks}</p>
-	// 														</div>
-	// 												})}
-	// 											</div>
-	// 										})}
-	// 								</div>
-	// 							</div>
-	// 						</div>
-	// 					);
-	// 				})
-	// 			}
-	// 		</div>
-	// 	);
-	// }
-	
-	// render() {
-	// 	return (
-    //         <div className="musiclist">
-    //             {
-	// 				data.Artists.map((artist, i) => {
-	// 					return (
-	// 						<div key={i} className="artists">
-	// 							<div>
-	// 								<a href={artist.url}>
-	// 									<img src={artist.logo} alt={artist.name} />
-	// 								</a>
-	// 								<div className="detailedList">
-	// 									<div>
-	// 										<a href={artist.url}>{artist.name}</a>
-	// 									</div>
-	// 										{artist.albums.map(function (albums, i) { 
-	// 											return <div key={i} >
-	// 												<h5>{albums.title}</h5>
-	// 												{albums.tracks.map((tracks, i) => { 
-	// 													return <div key={i} >
-	// 														<p>{tracks}</p>
-	// 														</div>
-	// 												})}
-	// 											</div>
-	// 										})}
-	// 								</div>
-	// 							</div>
-	// 						</div>
-	// 					);
-	// 				})
-	// 			}
-    //         </div>
-    //     );
-    // }
 } 
 export default MusicList;
