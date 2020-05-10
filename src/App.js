@@ -26,7 +26,7 @@ class App extends React.Component{
             <article className="sideView">
               <div className="container">
               <p id="AMP">AMP UP THOSE DBS</p>
-              <p id="MAKE">MAKE MUSIC ON THE GO</p>
+              <p id="MAKE">MAKE MUSIC ON THE GO.</p>
               <a href="#">
                 <img id="HIT" src={require('../src/misc/assists/hit-it.png')} alt="MusicDB Hit-it"/>
               </a>
@@ -77,7 +77,7 @@ class App extends React.Component{
               <ul className="Horzlinks">
                 <li>
                   <a href="#">
-                  <p>LINKS</p> 
+                  <p>LEGAL</p> 
                   </a>
                 </li>
                 <li>

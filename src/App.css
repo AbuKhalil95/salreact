@@ -39,6 +39,7 @@ header {
     align-items: center;
     font-size: 25px;
     color: black;
+    font-weight: 500;
   }
   .profile {
     width:58px;
@@ -60,28 +61,28 @@ main {
     }
       .container {
         width: fit-content;
+        text-align: start;
+        color: white;
       }
         #AMP {
-          font-size: 40px;
+          font-size: 55px;
+          font-weight: 500;
           width: 210px;
-          text-align: start;
           position: relative;
           right: -100px;
-          color: white;
           line-height: 1;
           margin: 0px;
         }
         #MAKE {
-          font-size: 20px;
+          font-size: 25px;
           width: 230px;
           position: relative;
           right: -100px;
-          color: white;
         }
         #HIT {
-          width: 180px;
+          width: 160px;
           position: relative;
-          right: -30px;
+          right: -55px;
         }
     .list {
       width: 50%;
@@ -154,13 +155,15 @@ main {
       
     }
       #GET {
-        font-size: 40px;
+        font-size: 55px;
+        font-weight: 500;
         margin: 0;
         padding-bottom: 50px;
 
       }
       #PICK1 {
         font-size: 20px;
+        font-weight: 500;
         margin: 0;
 
       }
@@ -178,7 +181,7 @@ footer {
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: white;
-  height: 350px;
+  height: 300px;
   display: block;
   padding: 5px;
 }
@@ -194,6 +197,9 @@ footer {
       margin-left: 50px;
       padding-top: 35px;
     }
+    .Vertlinks ul {
+      text-align: start;
+    }
     .Vertlinks a {
       color: white;
     }
@@ -201,15 +207,14 @@ footer {
     width: 100%;
     display: inline-block;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
-    top: 80px;
-
+    top: 45px;
   }
     .Horzlinks {
       position: initial;
       float: left;
-      margin-left: 100px;
+      margin-left: 75px;
       display:flex;
       padding: 0;
     }
