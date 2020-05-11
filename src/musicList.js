@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 //   .catch(console.error);
 
 // import data 
-var url = 'http://yahya95.pythonanywhere.com/graphql/';
+var url = 'https://yahya95.pythonanywhere.com/graphql/';
 
 class MusicList extends Component {
 
