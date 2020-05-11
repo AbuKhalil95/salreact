@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sal-web/static/css/main.b805a1f7.chunk.css",
+    "main.js": "/sal-web/static/js/main.28087960.chunk.js",
+    "main.js.map": "/sal-web/static/js/main.28087960.chunk.js.map",
+    "runtime-main.js": "/sal-web/static/js/runtime-main.859686c4.js",
+    "runtime-main.js.map": "/sal-web/static/js/runtime-main.859686c4.js.map",
+    "static/js/2.ec2eaa7c.chunk.js": "/sal-web/static/js/2.ec2eaa7c.chunk.js",
+    "static/js/2.ec2eaa7c.chunk.js.map": "/sal-web/static/js/2.ec2eaa7c.chunk.js.map",
+    "index.html": "/sal-web/index.html",
+    "precache-manifest.7a593913bf0c376afc573b3e5768d86b.js": "/sal-web/precache-manifest.7a593913bf0c376afc573b3e5768d86b.js",
+    "service-worker.js": "/sal-web/service-worker.js",
+    "static/css/main.b805a1f7.chunk.css.map": "/sal-web/static/css/main.b805a1f7.chunk.css.map",
+    "static/js/2.ec2eaa7c.chunk.js.LICENSE.txt": "/sal-web/static/js/2.ec2eaa7c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sal-web/static/media/BebasNeue-Thin.298c4b72.ttf",
+    "static/media/hit-it.png": "/sal-web/static/media/hit-it.fed2eee8.png",
+    "static/media/logoC.png": "/sal-web/static/media/logoC.e249c278.png",
+    "static/media/logoW.png": "/sal-web/static/media/logoW.54ff739a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.859686c4.js",
+    "static/js/2.ec2eaa7c.chunk.js",
+    "static/css/main.b805a1f7.chunk.css",
+    "static/js/main.28087960.chunk.js"
+  ]
+}
