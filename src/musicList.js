@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 //   .then(console.log)
 //   .catch(console.error);
 
-// import data from "./data"; 
+// import data 
 var url = 'http://yahya95.pythonanywhere.com/graphql/';
 
 class MusicList extends Component {
