@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sal-web/static/css/main.b805a1f7.chunk.css",
-    "main.js": "/sal-web/static/js/main.28087960.chunk.js",
-    "main.js.map": "/sal-web/static/js/main.28087960.chunk.js.map",
+    "main.js": "/sal-web/static/js/main.17c6a20a.chunk.js",
+    "main.js.map": "/sal-web/static/js/main.17c6a20a.chunk.js.map",
     "runtime-main.js": "/sal-web/static/js/runtime-main.859686c4.js",
     "runtime-main.js.map": "/sal-web/static/js/runtime-main.859686c4.js.map",
     "static/js/2.ec2eaa7c.chunk.js": "/sal-web/static/js/2.ec2eaa7c.chunk.js",
     "static/js/2.ec2eaa7c.chunk.js.map": "/sal-web/static/js/2.ec2eaa7c.chunk.js.map",
     "index.html": "/sal-web/index.html",
-    "precache-manifest.7a593913bf0c376afc573b3e5768d86b.js": "/sal-web/precache-manifest.7a593913bf0c376afc573b3e5768d86b.js",
+    "precache-manifest.d858fadd8079f6c63ca0c1e3c17e2aef.js": "/sal-web/precache-manifest.d858fadd8079f6c63ca0c1e3c17e2aef.js",
     "service-worker.js": "/sal-web/service-worker.js",
     "static/css/main.b805a1f7.chunk.css.map": "/sal-web/static/css/main.b805a1f7.chunk.css.map",
     "static/js/2.ec2eaa7c.chunk.js.LICENSE.txt": "/sal-web/static/js/2.ec2eaa7c.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.859686c4.js",
     "static/js/2.ec2eaa7c.chunk.js",
     "static/css/main.b805a1f7.chunk.css",
-    "static/js/main.28087960.chunk.js"
+    "static/js/main.17c6a20a.chunk.js"
   ]
 }
